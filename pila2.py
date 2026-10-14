@@ -42,31 +42,34 @@ while True:
 
 # Menú principal
 while True:
-    print("\n--- Menú ---")
-    print("1. Push (Apilar)")
-    print("2. Pop (Desapilar)")
-    print("3. Peek (Ver elemento superior)")
-    print("4. Mostrar pila")
-    print("5. Tamaño de la pila")
-    print("6. Salir")
-    
-    opc = input("Seleccione una opción: ")
+    try:
+        print("\n--- Menú ---")
+        print("1. Push (Apilar)")
+        print("2. Pop (Desapilar)")
+        print("3. Peek (Ver elemento superior)")
+        print("4. Mostrar pila")
+        print("5. Tamaño de la pila")
+        print("6. Salir")
+        
+        opc = input("Seleccione una opción: ")
 
-    if opc == "1":
-        item = input("Ingrese el elemento: ")
-        res = push(item, stack, size)
-        if res:
-            print(res)
-    elif opc == "2":
-        print("Resultado:", pop(stack))
-    elif opc == "3":
-        print("Elemento superior:", peek(stack))
-    elif opc == "4":
-        show(stack)
-    elif opc == "5":
-        print("Cantidad de elementos:", len_stack(stack))
-    elif opc == "6":
-        print("¡Hasta luego!")
-        break
-    else:
-        print("Opción no válida. Intente de nuevo.")
+        if opc == "1":
+            item = input("Ingrese el elemento: ")
+            res = push(item, stack, size)
+            if res:
+                print(res)
+        elif opc == "2":
+            print("Resultado:", pop(stack))
+        elif opc == "3":
+            print("Elemento superior:", peek(stack))
+        elif opc == "4":
+            show(stack)
+        elif opc == "5":
+            print("Cantidad de elementos:", len_stack(stack))
+        elif opc == "6":
+            print("¡Hasta luego!")
+            break
+        else:
+            print("Opción no válida. Intente de nuevo.")
+    except ValueError:
+        print("Entrada no válida")
