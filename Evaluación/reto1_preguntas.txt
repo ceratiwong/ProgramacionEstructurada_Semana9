@@ -1,0 +1,9 @@
+¿Qué libro se retira primero?
+    se retira primero "Base de Datos" por en principio LIFO (Last In, First Out)
+
+¿Por qué?
+    porque se esta trabajando con una pila y se utiliza el principio LIFO
+
+¿Qué sucede cuando se intenta retirar de una pila vacía?
+    Ocurre un IndexError  porque no existe ningún elemento que retirar.
+    Se evita comprobando si la pila está vacía antes de llamar a pop()

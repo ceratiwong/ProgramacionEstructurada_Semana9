@@ -1,0 +1,7 @@
+append() y pop()
+
+append(elemento) agrega un elemento al final de una lista. No devuelve la lista; modifica la lista original.
+
+pop() quita y devuelve el último elemento de una lista. Si se llama sin argumentos, trabaja con el último elemento. 
+Si la lista está vacía, produce un IndexError, por lo que es mejor comprobar antes si hay elementos.
+
